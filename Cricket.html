@@ -60,6 +60,52 @@
             T20s. Cricket is especially popular in countries like India, England, Australia, and Pakistan.
         </p>
     </body>
+    <div>
+        <img class="mySlide" src="Cricket image.jpg" style="height:500px;width:400px;">
+        <img class="mySlide" src="Cricket image 2.jpg" style="height:500px;width:400px;">
+        <img class="mySlide" src="Cricket image 3.jpg" style="height:500px;width:400px;">
+        <img class="mySlide" src="Cricket image 4.jpg" style="height:500px;width:400px;">
+        <img class="mySlide" src="Cricket image 5.jpg" style="height:500px;width:400px;">
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+        // Automatic Slideshow - change image every 3 seconds
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlide");
+
+            for (i = 0; i < x.length; i++) {
+                // #executed for only 0 1 2 
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            //myindex=0,1,2,3 for index 3 come back again to 1
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+            //calling function every 3 seconds
+        }
+    </script>
+    <body>
+        <!-- Let's try various heading and tags -->
+        <b>Welcome to Cricket... Let's get started with coding </b> <br>
+        <strong> Welcome to Cricket... let's get started with coding </strong> <br>
+        <i> Welcome to Cricket... let's get started with coding </i> <br>
+        <em> Welcome to Cricket... let's get started with coding </em> <br>
+        <mark> Welcome to Cricket let's get started with coding </mark> <br>
+        <small> Welcome to Cricket... let's get started with coding </small> <br>
+        <del> Welcome to Cricket... let's get started with coding </del> <br>
+        Welcome to <sup>Cricket</sup>. Let's get started with <sub>coding</sub><br>
+    
+        </body>
+        <body>
+            <h2>Welcome to Cricket</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ybcXSf_f64U?si=5q7x4Ux6NHrIl6L7"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </body>
 </body>
 
 </html>

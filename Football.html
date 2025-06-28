@@ -59,6 +59,50 @@
             almost every country and brings people together through leagues, tournaments, and the World Cup.
         </p>
     </body>
-</body>
+    <div>
+        <img class="mySlide" src="football image.jpg" style="height:500px;width:400px;">
+        <img class="mySlide" src="Football image  2.jpg" style="height:500px;width:400px;">
+        <img class="mySlide" src="Football image  3.jpg" style="height:500px;width:400px;">
+        <img class="mySlide" src="Football image  4.jpg" style="height:500px;width:400px;">
+        <img class="mySlide" src="Football image  5.jpg" style="height:500px;width:400px;">
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+        // Automatic Slideshow - change image every 3 seconds
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlide");
 
+            for (i = 0; i < x.length; i++) {
+                // #executed for only 0 1 2 
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            //myindex=0,1,2,3 for index 3 come back again to 1
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+            //calling function every 3 seconds
+        }
+    </script>
+    <body>
+        <!-- Let's try various heading and tags -->
+        <b>Welcome to football... Let's get started with coding </b> <br>
+        <strong> Welcome to football... let's get started with coding </strong> <br>
+        <i> Welcome to football... let's get started with coding </i> <br>
+        <em> Welcome to football... let's get started with coding </em> <br>
+        <mark> Welcome to football let's get started with coding </mark> <br>
+        <small> Welcome to football... let's get started with coding </small> <br>
+        <del> Welcome to football... let's get started with coding </del> <br>
+        Welcome to <sup>football</sup>. Let's get started with <sub>coding</sub><br>
+        </body>
+        <body>
+            <h2>Welcome to Football</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jZVN1XFhaww?si=LvDzWIYHDJaOuG8N"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </body>
+</body>
 </html>
